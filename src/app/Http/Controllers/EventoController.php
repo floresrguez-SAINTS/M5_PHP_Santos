@@ -32,8 +32,8 @@ class EventoController extends Controller
         $validator = Validator::make($request->all(), [
             'titulo'       => 'required',
             'descripcion'  => 'required',
-            'fechainicio'  => 'required|date',
-            'fechafin'     => 'required|date',
+            'fecha_inicio'  => 'required|date',
+            'fecha_fin'     => 'required|date',
             'ubicacion'    => 'required',
         ]);
 
@@ -50,8 +50,8 @@ class EventoController extends Controller
         $evento = Evento::create([
             'titulo'       => $request->titulo,
             'descripcion'  => $request->descripcion,
-            'fechainicio'  => $request->fechainicio,
-            'fechafin'     => $request->fechafin,
+            'fecha_inicio'  => $request->fechainicio,
+            'fecha_fin'     => $request->fechafin,
             'ubicacion'    => $request->ubicacion,
         ]);
 
@@ -114,8 +114,8 @@ class EventoController extends Controller
         $validator = Validator::make($request->all(), [
             'titulo'       => 'required',
             'descripcion'  => 'required',
-            'fechainicio'  => 'required|date',
-            'fechafin'     => 'required|date',
+            'fecha_inicio'  => 'required|date',
+            'fecha_fin'     => 'required|date',
             'ubicacion'    => 'required',
         ]);
 
