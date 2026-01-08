@@ -131,8 +131,8 @@ class EventoController extends Controller
         // Actualizar el recurso especificado con los datos de la petición
         $evento->titulo       = $request->titulo;
         $evento->descripcion  = $request->descripcion;
-        $evento->fechainicio  = $request->fechainicio;
-        $evento->fechafin     = $request->fechafin;
+        $evento->fecha_inicio  = $request->fecha_inicio;
+        $evento->fecha_fin     = $request->fecha_fin;
         $evento->ubicacion    = $request->ubicacion;
         $evento->save();
 
