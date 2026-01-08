@@ -50,8 +50,8 @@ class EventoController extends Controller
         $evento = Evento::create([
             'titulo'       => $request->titulo,
             'descripcion'  => $request->descripcion,
-            'fecha_inicio'  => $request->fechainicio,
-            'fecha_fin'     => $request->fechafin,
+            'fecha_inicio'  => $request->fecha_inicio,
+            'fecha_fin'     => $request->fecha_fin,
             'ubicacion'    => $request->ubicacion,
         ]);
 
